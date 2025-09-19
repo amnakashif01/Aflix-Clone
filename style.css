@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Oswald:wght@500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+
+   }
+   h2, h3 {
+  font-family: 'Oswald', sans-serif;
+}
+.main {
+    background-image: url(Assets/Images/Background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    overflow-x: hidden;
+    width: 100%;
+    align-items: center;
+}
+
+nav {
+    max-width: 75vw;
+    height: 105px;
+    margin: auto;
+    display: flex;
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.70;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    margin: auto;
+    height: 90px;
+}
+
+nav img {
+    z-index: 1;
+    width: 150px;
+}
+
+nav button {
+    z-index: 1;
+}
+
+.hero {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 32px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.hero> :nth-child(1) {
+    font-size: 3.1rem;
+    font-weight: 900;
+    margin-bottom: 0.2rem;
+    text-align: center;
+    max-width: 550px;
+    padding-top: 20px;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.btn {
+    border-radius: 5px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-red-sm {
+    padding: 6px 14px;
+    background-color: red;
+}
+
+.btn-red {
+    background-color: red;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 20px;
+}
+.btntext{
+    font-family: "Poppins";
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main input {
+    padding: 17px 159px 17px 13px;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(214, 197, 197, 0.404);
+    
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.692);
+}
+
+.separate {
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    box-sizing: border-box;
+}
+.content{
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    color: white;
+    width: 100vw;
+    position: relative;
+    z-index: 5;
+    margin-top: 20px;
+    max-width: 91vw;
+    padding-left: 130px;
+    box-sizing: border-box;
+    font-size: 25px;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.first{
+    max-width: 80vw;
+}
+.pics{
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overflow-x: scroll;
+
+}
+.pic {
+    flex: 0 0 auto;
+    width: 170px;
+    height: 230px;
+    border-radius: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px 5px;
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 10;
+    gap: 2px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.text{
+    font-family: "Poppins";
+    position: absolute;
+    font-size: 100px;
+    -webkit-text-stroke: 1.7px rgb(222, 217, 217); 
+    font-weight: 700;
+    text-shadow: 8px 7px 6px black;
+    color: black;
+    left: -17px;
+    bottom: 2px;
+}
+.pic:hover{
+    transform: scale(1.07);
+  z-index: 2; 
+}
+.pic1{
+    background-image: url(Assets/Images/Black-rabbit.webp);
+    margin-left: 15px; 
+}
+
+.pic2{
+    background-image: url(Assets/Images/Boruto.webp)
+
+}
+.pic3{
+    background-image: url(Assets/Images/Money-Heist.webp)
+
+    
+}
+.pic4{
+    background-image: url(Assets/Images/Squid-game.webp);
+
+    
+}
+.pic5{
+    background-image: url(Assets/Images/Stranger-things.jpg);
+
+    
+
+}
+.pic6{
+    background-image: url(Assets/Images/suits.jpg);
+
+    
+}
+.pic7{
+    background-image: url(Assets/Images/Trigger.jpg);
+
+    
+}
+.pic8{
+    background-image: url(Assets/Images/walter-boys.jpg)
+    
+}
+.pic9{
+    background-image: url(Assets/Images/Wednesday.webp);
+    
+}
+.pic10{
+    background-image: url(Assets/Images/You.jpg);
+
+    
+}
+.caption{
+    padding: 50px 0px 11px 10px;
+}
+.second{
+    margin: 5px;
+    width: auto;
+    object-fit: cover;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin: 10px 0px;
+    scrollbar-width: none;
+    overflow: hidden;
+     font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+.card{
+    border-radius: 5%;
+     font-family: 'Oswald', sans-serif;
+    height: 304px;
+    width: 254px;
+    background: linear-gradient(#192247 0%, #210e17 96.86%);
+    border: 2px solid transparent;
+    position: relative;
+    z-index: 5;
+    margin: 3px 3px 3px 3px;
+}
+.card h3, p{
+    font-family: "Poppins";
+    color: white;
+    padding: 16px 16px 10px 16px;
+}
+h3{
+    font-size: 20px;
+    margin: 5px 5px;
+    font-weight: 600;
+}
+
+.card p{
+    color: rgba(197, 193, 193, 0.765);
+    margin-top: -10px;
+    font-size: 14px;
+   font-weight: 500;
+}
+
+.card1-img{
+    padding: 42px 13px 12px 160px;
+}
+.card2-img{
+    padding: 27px 13px 12px 165px;
+}
+.card3-img{
+    padding: 30px 13px 12px 165px;
+}
+.card4-img{
+    padding: 19px 13px 12px 165px;
+}
+.Questions{
+    margin-top: 10px;
+}
+.button{
+    margin: 8px;
+    max-width: 90vw;
+    height: 30px;
+    text-align: left;
+    color: white;
+    padding: 24px;
+    background-color: rgb(45,45,45);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+.button:hover{
+   transition: all 0.5s ease-out;
+   background-color: rgba(164, 162, 162, 0.61);
+}
+
+.last input{
+   
+    padding: 15px 200px 15px 17px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    width: 350px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(214, 197, 197, 0.404);
+}
+.email-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 23px;
+}
+.lastform{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    margin: 50px 20px 20px 20px;
+    max-width: 70vw ;
+    color: white;
+    height: 500px;
+}
+.items{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+.items ul {
+    list-style: none;
+    padding: 0;
+  }
+  .items li {
+    margin-bottom: 12px;
+    
+    font-weight: 400;
+  }
+  
+  footer {
+    position: relative;
+    margin: 50px 20px 20px 50px;
+    max-width: 70vw ;
+    color: white;
+    height: 500px;
+    background-color: black;
+    padding: 40px 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-container {
+    font-size: 14px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+  }
+  a{
+    color: rgba(255, 255, 255, 0.7);
+  }
+  footer p{
+    padding: 16px 16px 10px 0px;
+  }
+
+  select{
+    margin-top: 40px;
+    width: 120px;
+    padding: 6px 25px 6px 25px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.69);
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    flex-wrap: wrap;
+  }
+  .country-label{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+@media (max-width:1265px){
+      
+    .cards{
+        width: 100%;
+        display: grid;
+        gap: 2px;
+        grid-template-columns: 129px 252px;
+    }
+
+
+}
+  @media (max-width:1015px) {
+ .content {
+    padding-left: 65px;
+    max-width: 95vw;
+ }
+ .first{
+    max-width: 90vw;
+ }
+ .hero{
+        padding: 20px;
+        height: 50vh;
+    }
+    .box{
+        min-height: 70vh;
+    }
+    .main{
+    height: 70vh;
+    }
+    
+ .lastform{
+    flex-direction: column;
+ }
+  .hero> :nth-child(1) {
+        font-size: 40px;
+    }
+  .btn-red{
+         padding: 8px 20px;
+        font-weight: 600;
+  }
+  .cards{
+        width: 100%;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 129px 252px;
+    }
+  }
+
+
+
+ @media (max-width:690px) {
+    .btntext{
+        font-size: 8px;
+        padding: 5px 5px;
+    }
+    .btn-red{
+        padding: 0px 5px;
+        font-weight: 500;
+    }
+    .hero{
+        padding-bottom: 20px;
+        height: 40vh;
+    }
+    nav{
+        height: 50px;
+    }
+    .main img{
+        width: 100px;
+    }
+    .main{
+    height: 50vh;
+    }
+    .box{
+       min-height: 50vh;
+    }
+    .hero> :nth-child(1) {
+        font-size: 20px;
+    }
+    .hero> :nth-child(2) {
+       font-size: 15px;
+    }
+    .hero> :nth-child(3) {
+        display: none;
+    }
+
+    .main input{
+        padding: 7px 20px 7px 10px;
+    font-size: 12px;
+    }
+    
+    .email-form>p{
+        font-size: 15px;
+    }
+    .lastform{
+        padding: 7px 20px 7px 10px;
+    font-size: 12px;
+    }
+    .content{
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    .first{
+        max-width: 95vw;
+    }
+    .caption {
+    padding: 24px 0px 11px 10px;
+    font-size: 20px;
+}
+    .pic{
+    width: 139px;
+    height: 193px;
+    margin: 12px 5px;
+    }
+    .pic1{
+        margin: 9px 15px;
+    }
+    .text{
+        font-size: 80px;
+    }
+    .last input{
+        width: 250px;
+        font-size: 10px;
+         padding: 6px 0px 6px 5px;
+    }
+    .cards{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cardimg {
+        padding: 105px 27px 13px 13px;
+    }
+    
+    .card{
+        width: 90vw;
+        height: 50vh;
+    }
+   
+    .bottom{
+        background-color: black;
+    }
+    .items{
+         background-color: black;
+    }
+}
+@media (max-width:350px) {
+    .hero> :nth-child(2) {
+            margin-bottom: 0.8rem;
+
+    }
+     .cardimg{
+        padding: 99px 27px 13px 248px;
+    }
+     .last input{
+        width: 250px;
+        font-size: 10px;
+         padding: 6px 0px 6px 5px;
+    }
+}
