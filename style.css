@@ -18,7 +18,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 99vh;
     position: relative;
     object-fit: cover;
     object-position: center;
@@ -39,7 +39,7 @@ nav {
 }
 
 .box {
-    min-height: 100vh;
+    min-height: 99vh;
     width: 100%;
     background-color: black;
     opacity: 0.70;
@@ -64,11 +64,17 @@ nav img {
 nav button {
     z-index: 1;
 }
-
+#msg{
+    top: -10px;
+    position: relative;
+    z-index: 10;
+    color: white;
+    font-size: 12px;
+}
 .hero {
     font-family: "Poppins", sans-serif;
     color: white;
-    height: calc(100% - 100px);
+    height: calc(100% - 115px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +91,7 @@ nav button {
     margin-bottom: 0.2rem;
     text-align: center;
     max-width: 550px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 
 .hero> :nth-child(2) {
@@ -292,8 +298,8 @@ input::placeholder {
     z-index: 5;
     margin: 3px 3px 3px 3px;
 }
-.card h3, p{
-    font-family: "Poppins";
+.card h3, #cardp{
+    font-family: 'Oswald', sans-serif;
     color: white;
     padding: 16px 16px 10px 16px;
 }
@@ -497,8 +503,9 @@ footer{
         font-weight: 500;
     }
     .hero{
+        padding: 5px;
         padding-bottom: 20px;
-        height: 40vh;
+        height: 38vh;
     }
     nav{
         height: 50px;
@@ -513,6 +520,7 @@ footer{
        min-height: 50vh;
     }
     .hero> :nth-child(1) {
+        padding: 5px;
         font-size: 20px;
     }
     .hero> :nth-child(2) {
@@ -570,7 +578,10 @@ footer{
     .cardimg {
         padding: 105px 27px 13px 13px;
     }
-    
+    #msg{
+        font-size: 12px;
+
+    }
     .card{
         width: 90vw;
         height: 50vh;
@@ -586,7 +597,7 @@ footer{
 @media (max-width:350px) {
     .hero> :nth-child(2) {
             margin-bottom: 0.8rem;
-
+ padding: 0;
     }
      .cardimg{
         padding: 99px 27px 13px 248px;
@@ -595,5 +606,12 @@ footer{
         width: 250px;
         font-size: 10px;
          padding: 6px 0px 6px 5px;
+    }
+    #msg{
+    top: -10px;
+    position: relative;
+    }
+    .hero{
+        padding: 0;
     }
 }
