@@ -558,8 +558,8 @@ footer{
     width: 139px;
     height: 193px;
     margin: 12px 5px;
+    position: relative;
      filter: brightness(120%) contrast(110%);
-
     z-index: 10;
 
     }
@@ -568,6 +568,7 @@ footer{
     }
     .text{
         font-size: 80px;
+        z-index: 9;
     }
     .last input{
         width: 250px;
