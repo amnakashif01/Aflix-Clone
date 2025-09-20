@@ -559,7 +559,7 @@ footer{
     height: 193px;
     margin: 12px 5px;
     position: relative;
-     filter: brightness(120%) contrast(110%);
+    background-color: white;
     z-index: 10;
 
     }
@@ -569,6 +569,7 @@ footer{
     .text{
         font-size: 80px;
         z-index: 9;
+        color: rgb(183, 107, 107);
     }
     .last input{
         width: 250px;
