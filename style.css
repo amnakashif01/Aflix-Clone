@@ -558,7 +558,8 @@ footer{
     width: 139px;
     height: 193px;
     margin: 12px 5px;
-     filter: 100%;
+     filter: brightness(120%) contrast(110%);
+
     z-index: 10;
 
     }
