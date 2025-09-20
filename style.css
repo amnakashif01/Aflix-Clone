@@ -223,7 +223,7 @@ input::placeholder {
 }
 .pic1{
     background-image: url(Assets/Images/Black-rabbit.webp);
-    margin-left: 15px; 
+    /* margin-left: 15px;  */
 }
 
 .pic2{
@@ -559,9 +559,11 @@ footer{
     height: 193px;
     margin: 12px 5px;
      filter: 100%;
+    z-index: 10;
+
     }
     .pic1{
-        margin: 0 15px;
+        margin: 13px 15px;
     }
     .text{
         font-size: 80px;
