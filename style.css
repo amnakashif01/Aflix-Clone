@@ -213,7 +213,9 @@ input::placeholder {
     position: absolute;
     font-size: 100px;
     font-weight: 700;
-    color: rgb(70, 63, 63);
+    -webkit-text-stroke: 1.7px rgb(222, 217, 217); 
+    text-shadow: 2px 2px 4px black;
+    color: black;
     left: -17px;
     bottom: 2px;
 }
@@ -223,7 +225,7 @@ input::placeholder {
 }
 .pic1{
     background-image: url(Assets/Images/Black-rabbit.webp);
-    /* margin-left: 15px;  */
+    margin-left: 15px; 
 }
 
 .pic2{
@@ -444,6 +446,11 @@ footer{
     margin-top: 30px;
     color: rgba(255, 255, 255, 0.7);
   }
+  @media (prefers-color-scheme: dark) {
+  .pic {
+    filter: brightness(1);
+  }
+}
 @media (max-width:1265px){
       
     .cards{
@@ -569,7 +576,7 @@ footer{
     .text{
         font-size: 80px;
         z-index: 9;
-        color: rgb(183, 107, 107);
+        color: white;
     }
     .last input{
         width: 250px;
