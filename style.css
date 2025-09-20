@@ -204,15 +204,18 @@ input::placeholder {
     cursor: pointer;
     
 }
+.pic img {
+  filter: brightness(100%); /* normal brightness */
+}
 
 .text{
     font-family: "Poppins";
     position: absolute;
     font-size: 100px;
-    -webkit-text-stroke: 1.7px rgb(222, 217, 217); 
+    -webkit-text-stroke: 2px black; 
     font-weight: 700;
-    text-shadow: 8px 7px 6px black;
-    color: black;
+    text-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+    color: white;
     left: -17px;
     bottom: 2px;
 }
